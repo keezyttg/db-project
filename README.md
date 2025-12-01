@@ -30,22 +30,26 @@ It includes a full schema, sample data, test queries, and an application interfa
 ## 2. How to Set Up the Database
 
 ### Step 1: Open the project folder in terminal
-
+Navigate into the folder where your SQL files are stored.
 
 ### Step 2: Create the database
 
 Start SQLite:
+sqlite3 gym.db
 
 
 ### Step 3: Load schema
 
 Inside the SQLite prompt:
+.read schema.sql
 
 
 ### Step 4: Load sample data
 
+.read data.sql
 
 ### Step 5: Verify tables loaded
+.tables
 
 
 You should see:
@@ -62,6 +66,7 @@ Payment
 ## 3. Running the Application Interface (app.py)
 
 Make sure you are in the same directory as app.py and gym.db, then run:
+python3 app.py
 
 
 The menu allows you to:
@@ -80,7 +85,7 @@ All operations directly modify gym.db.
 ## 4. Running the Test Queries
 
 To execute the 5 test queries for grading:
-
+    sqlite3 gym.db < test_queries.sql
 
 This prints formatted query results to the terminal.
 
@@ -106,12 +111,6 @@ The project works on macOS, Windows, and Linux.
 
 ## 7. Notes
 
-If the grader cannot run the code, they should ensure:
-
-- The database file is in the same folder as app.py  
-- SQLite3 is installed  
-- Python 3 is installed  
-
-The project is fully self-contained.
+If anything fails to run, check that gym.db is in the same directory as the Python file. Python 3 and SQLite3 must be installed. The project is fully self contained once the schema and data are loaded.
 
 # db-project
