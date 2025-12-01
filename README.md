@@ -98,9 +98,9 @@ The project works on macOS, Windows, and Linux.
 
 ## 6. Team Members and Responsibilities
 
-- Lorenzo Jackson — schema design, SQL implementation, CLI coding  
-- Malachi Fowler — ER diagram and interface testing  
-- Jonathan DeRose — sample data generation and query testing
+- Lorenzo Jackson: Wrote the enterprise description and justification, created the ER diagram, generated the database data, wrote the test queries, and built the application user interfaces.
+- Jonathan DeRose: Created the relational schema used in the final database, reviewed and refined the constraints, assisted with the ER diagram, and used the schema to build the tables and define their attributes.
+- Malachi Fowler: Scheduled team meetings, coordinated group communication, and helped plan the database structure and contribute to the ER diagram and relationship design.
 
 ---
 
